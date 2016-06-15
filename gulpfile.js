@@ -13,7 +13,7 @@ gulp.task('sass', function() {
     })
       .on('error', $.sass.logError))
     .pipe($.autoprefixer({
-      browsers: ['last 2 versions', 'ie >= 9']
+      browsers: ['last 2 versions', 'ie >= 9', 'and_chr >= 2.3']
     }))
     .pipe(gulp.dest('css'));
 });
